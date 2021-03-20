@@ -23,7 +23,7 @@ if (h < 12) {
 }
 
 
-saveButton.addEventListener("click", getInput, false);
+saveButton.addEventListener("click", getInput);
 
 function getInput(event) {
     event.preventDefault();
@@ -51,7 +51,7 @@ function renderDayPlanner() {
     console.log(lastPlanner.nineAm);
 
     if (lastPlanner !== null) {
-        document.getElementById("nineamtext").value = lastPlanner.nineAM;
+        nineAMInput.value = lastPlanner.nineAM;
         document.getElementById("tenamtext").value = lastPlanner.tenAM;
     } else {
         return;

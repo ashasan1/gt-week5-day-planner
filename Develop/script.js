@@ -4,6 +4,25 @@ var timeAM = document.querySelector("#myAM");
 var nineAMInput = document.querySelector("#nineamtext");
 var tenAMInput = document.querySelector("#tenamtext");
 
+var timeSpot = document.querySelector("#currentTime");
+var current = new Date();
+h = (current.getHours()<10?'0':'') + current.getHours();
+m = (current.getMinutes()<10?'0':'') + current.getMinutes();
+var currentTime = h + ':' + m;
+console.log(currentTime);
+
+timeSpot.textContent = "The current time is" + " " + currentTime;
+
+
+if (h > 12) {
+    console.log("its the afternoon");
+}
+
+if (h < 12) {
+    console.log("it's the morning");
+}
+
+
 saveButton.addEventListener("click", getInput, false);
 
 function getInput(event) {
@@ -56,3 +75,12 @@ var now = moment().format("MMM Do YYYY")
 let $dateHeader = $("#currentDay");
 $dateHeader.text(now);
 
+var nowTime = Date.now();
+
+// function timeNow() {
+//     var current = new Date();
+//     h = (current.getHours()<10?'0':'') + current.getHours();
+//     m = (current.getMinutes()<10?'0':'') + current.getMinutes();
+//     var currentTime = h + ':' + m;
+//     console.log(currentTime);
+// }

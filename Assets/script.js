@@ -45,18 +45,25 @@ localStorage.setItem("9Am", value9);
 
 var value10 = document.getElementById("tenamtext").value;
 localStorage.setItem("10Am", value10);
+
 var value11 = document.getElementById("elevenamtext").value;
 localStorage.setItem("11Am", value11);
+
 var value12 = document.getElementById("twelvepmtext").value;
 localStorage.setItem("12Pm", value12);
+
 var value13 = document.getElementById("onepmtext").value;
 localStorage.setItem("1Pm", value13);
+
 var value14 = document.getElementById("twopmtext").value;
 localStorage.setItem("2Pm", value14);
+
 var value15 = document.getElementById("threepmtext").value;
 localStorage.setItem("3Pm", value15);
+
 var value16 = document.getElementById("fourpmtext").value;
 localStorage.setItem("4Pm", value16);
+
 var value17 = document.getElementById("fivepmtext").value;
 localStorage.setItem("5Pm", value17);
 
